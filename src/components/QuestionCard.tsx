@@ -15,8 +15,8 @@ const QuestionCard = ({
     question,
     onNext,
     onSelectionChange,
-    currentQuestion,
-    totalQuestions
+    currentQuestion: _currentQuestion,
+    totalQuestions: _totalQuestions
 }: QuestionCardProps) => {
     const [selectedWords, setSelectedWords] = useState<string[]>([]);
     const [availableWords, setAvailableWords] = useState<string[]>(question.options);
