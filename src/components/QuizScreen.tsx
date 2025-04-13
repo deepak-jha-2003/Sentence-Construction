@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useFetchQuestions from '../hooks/useFetchQuestions';
 import QuestionCard from './QuestionCard';
-import { Question, UserAnswer } from '../types/types';
+import { UserAnswer } from '../types/types';
 
 const QuizScreen = () => {
     const { questions, loading, error } = useFetchQuestions();
